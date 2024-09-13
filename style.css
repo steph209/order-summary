@@ -1,0 +1,186 @@
+/* =============================================================================
+  #TYPOGRAPHY 
+============================================================================= */
+body {
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;   
+    font-style: normal;
+}
+
+button {
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* =============================================================================
+  #GENERAL 
+============================================================================= */
+body {
+    background-color: hsl(225, 100%, 94%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    height: 100svh;
+}
+
+main {
+    background-color: white;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* =============================================================================
+  #CONTENT
+============================================================================= */
+
+.main-img {
+    display: block;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+    .main-img img {
+        width: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+
+    padding: 25px;
+}
+    
+.description {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+}
+
+
+.annual-plan {
+    display: flex;
+
+    background-color: hsl(225, 100%, 98%);
+
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+
+    /* width: 100%; */
+}
+
+    .annual-plan img {
+        padding-right: 20px;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        padding-right: 40px;
+    }
+
+        .prices h2 {
+            font-weight: 700;
+        }
+
+        .prices p {
+            color: hsl(224, 23%, 55%);
+            font-weight: 700;
+        }
+
+    /* .annual-plan button {
+        border: none;
+        box-shadow: none;
+        text-decoration: underline;
+
+        background-color: transparent;
+        color: hsl(223, 47%, 23%);
+        
+        font-weight: 900;
+        font-size: 16px;
+    } */
+
+ /* =============================================================================
+  #BTN
+============================================================================= */
+button {
+    border: none;
+    background-color: transparent;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.annual-plan button {
+    border: none;
+    box-shadow: none;
+    text-decoration: underline;
+
+    background-color: transparent;
+    color: hsl(223, 47%, 23%);
+    
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.payment-button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+
+    box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+
+    padding: 15px 70px;
+    border-radius: 10px;
+
+    position: relative;
+    bottom: unset;
+    left: unset;
+    right: unset;
+}
+
+.cancel-button {
+    color: hsl(224, 23%, 55%);
+
+    font-size: 16px;
+    font-weight: 900;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 15px 70px;
+
+    position: relative;
+    bottom: unset;
+    left: unset;
+    right: unset;
+}

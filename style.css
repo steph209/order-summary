@@ -12,6 +12,8 @@ button {
 
 p {
     font-size: 16px;
+
+    line-height: 1.5;
 }
 
 
@@ -46,7 +48,7 @@ main {
   #CONTENT
 ============================================================================= */
 section {
-    padding: 10px;
+    padding: 20px;
 }
 
 .main-img {
@@ -72,7 +74,9 @@ h1 {
     font-size: 28px;
     font-weight: 900;
 
-    padding: 25px;
+    text-align: center;
+    
+    padding-bottom: 20px;
 }
     
 .description {
@@ -94,7 +98,7 @@ h1 {
     border-radius: 20px;
     margin-bottom: 25px;
 
-    /* width: 100%; */
+    position: relative;
 }
 
     .annual-plan img {
@@ -119,18 +123,6 @@ h1 {
             font-weight: 700;
         }
 
-    /* .annual-plan button {
-        border: none;
-        box-shadow: none;
-        text-decoration: underline;
-
-        background-color: transparent;
-        color: hsl(223, 47%, 23%);
-        
-        font-weight: 900;
-        font-size: 16px;
-    } */
-
  /* =============================================================================
   #BTN
 ============================================================================= */
@@ -154,7 +146,15 @@ button {
     
     font-weight: 900;
     font-size: 16px;
+
+    position: absolute;
+    bottom: 41%;
+    left: 70%;
 }
+
+    .annual-plan button:hover {
+        color: hsl(245, 75%, 70%);
+    }
 
 .payment-button {
     background-color: hsl(245, 75%, 52%);
@@ -166,12 +166,10 @@ button {
     border-radius: 10px;
 
     width: 100%;
-
-    /* position: relative;
-    bottom: unset;
-    left: unset;
-    right: unset; */
 }
+    .payment-button:hover{
+        background-color: hsl(245, 75%, 70%);
+    }
 
 .cancel-button {
     color: hsl(224, 23%, 55%);
@@ -180,14 +178,28 @@ button {
     font-weight: 900;
 
     margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 
     padding: 15px 70px;
 
     width: 100%;
+}
 
-    /* position: relative;
-    bottom: unset;
-    left: unset;
-    right: unset; */
+    .cancel-button:hover {
+        color: hsl(223, 47%, 23%);
+    }
+
+/* =============================================================================
+  #MEDIAQUERIES
+============================================================================= */
+
+@media screen and (min-width: 800px) {
+    main {
+        /* background-color: red; */
+        width: 450px;
+    }
+
+    section {
+        padding: 40px;
+    }
 }
